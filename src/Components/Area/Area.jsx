@@ -11,7 +11,6 @@ export default function Area() {
             refetchInterval: 60000,
         },
     );
-    // console.log(data);
 
     function getAllArea() {
         return axios.get(`https://www.themealdb.com/api/json/v1/1/list.php?a=list`);

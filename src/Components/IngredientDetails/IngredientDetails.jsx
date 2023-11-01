@@ -14,10 +14,8 @@ export default function IngredientDetails() {
             refetchInterval: 60000,
         }
     );
-    // console.log(data);
 
     let params = useParams();
-    // console.log(params);
 
     function getIngredientDetails() {
         return axios.get(

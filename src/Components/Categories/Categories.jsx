@@ -10,7 +10,7 @@ export default function Categories() {
         refetchInterval: 60000,
     },
     )
-    // console.log(data);
+
     function getCategories() {
         return axios.get(`https://www.themealdb.com/api/json/v1/1/categories.php`)
     }

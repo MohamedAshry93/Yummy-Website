@@ -10,10 +10,8 @@ export default function AreaDetails() {
         cacheTime: 60000,
         refetchInterval: 60000,
     });
-    // console.log(data);
 
     let params = useParams();
-    // console.log(params);
 
     function getAreaDetails() {
         return axios.get(

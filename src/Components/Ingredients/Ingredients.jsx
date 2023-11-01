@@ -11,7 +11,6 @@ export default function Ingredients() {
             refetchInterval: 60000,
         },
     )
-    // console.log(data);
 
     function getIngredients() {
         return axios.get(`https://www.themealdb.com/api/json/v1/1/list.php?i=list`);

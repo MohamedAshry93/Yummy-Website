@@ -15,7 +15,6 @@ export default function Home() {
     function getAllMeals() {
         return axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=`);
     }
-    // console.log(data);
 
     return (<>
         {isLoading ? <div className="w-100 d-flex justify-content-center vh-100 align-items-center">

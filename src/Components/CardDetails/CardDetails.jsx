@@ -7,12 +7,11 @@ export default function CardDetails() {
     const [isLoading, setIsLoading] = useState(false);
     const [details, setAllDetails] = useState({});
     let params = useParams();
-    // console.log(params);
+
     async function getMealDetails() {
         setIsLoading(true);
         let { data } = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`);
         setIsLoading(false);
-        // console.log(data.meals[0]);
         return data.meals[0];
     }
 
