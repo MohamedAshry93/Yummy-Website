@@ -15,7 +15,7 @@ export default function AreaDetails() {
 
     function getAreaDetails() {
         return axios.get(
-            `http://www.themealdb.com/api/json/v1/1/filter.php?a=${params.area}`
+            `https://www.themealdb.com/api/json/v1/1/filter.php?a=${params.area}`
         );
     }
 
